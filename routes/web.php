@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Buscador
+Route::get('/','MusicaController@llamada');
+
+Route::post('/result','MusicaController@buscar');
